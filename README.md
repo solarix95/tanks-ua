@@ -9,7 +9,7 @@ Features
 * Unique reload mode
 * Unexpected enemies...
 
-![FLAPlayer](https://github.com/solarix95/lbaworld/blob/master/doc/tanks-ue.png)
+![PRINTSCREEN](https://github.com/solarix95/tanks-ue/blob/master/doc/tanks-ue.png)
 
 First steps
 ---------
