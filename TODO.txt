@@ -1,0 +1,7 @@
+
+> Beschriftung des PlayerStates
+> Neuer Bot?
+> Bomb
+> alternative Waffen
+> Icon für Rundenwahl
+

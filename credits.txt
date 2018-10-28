@@ -1,0 +1,19 @@
+
+Sounds:
+artillery-sound: http://freesound.org/people/qubodup/sounds/187767/
+boom1          : http://freesound.org/people/ReadeOnly/sounds/186951/
+boom2          : http://freesound.org/people/zimbot/sounds/209984/
+boom3          : http://freesound.org/people/ryansnook/sounds/110111/
+steel-hammer   : http://freesound.org/people/Benboncan/sounds/103632/
+WilhelmScream  : https://archive.org/details/WilhelmScreamSample
+Electric Zap   : http://freesound.org/people/JoelAudio/sounds/136542/
+Thunder        : http://freesound.org/people/Dave%20Welsh/sounds/194364/
+WoodHit        : http://freesound.org/people/thomasjaunism/sounds/218460/
+Cash-Register  : http://freesound.org/people/kiddpark/sounds/201159/
+shot-and-reload: http://freesound.org/people/gcmax/sounds/86808/
+youpi          : http://freesound.org/people/breizhizou29/sounds/215671/
+
+Images:
+StopOption     : http://pixabay.com/de/verkehr-anmelden-anschlag-157617/
+LocalPlayer    : http://pixabay.com/de/sie-zeigefinger-hinweis-finger-151415/
+

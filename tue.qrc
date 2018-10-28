@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/splash.png</file>
+        <file>images/player_anarki.png</file>
+        <file>images/player_duke.png</file>
+        <file>images/player_local.png</file>
+        <file>images/feature1.png</file>
+        <file>images/feature2.png</file>
+        <file>images/feature3.png</file>
+        <file>sounds/boom1.wav</file>
+        <file>sounds/boom2.wav</file>
+        <file>sounds/boom3.wav</file>
+        <file>sounds/drums.wav</file>
+        <file>sounds/artillery-shot.wav</file>
+        <file>sounds/thunder.wav</file>
+        <file>sounds/steel-hammer.wav</file>
+        <file>sounds/youpi.wav</file>
+        <file>sounds/WilhelmScream.wav</file>
+        <file>sounds/electric_zap.wav</file>
+        <file>sounds/wood-block-hit.wav</file>
+        <file>sounds/cash-register.wav</file>
+        <file>images/cloud.png</file>
+        <file>images/player_iceman.png</file>
+        <file>images/player_nerd.png</file>
+        <file>images/stopoption.png</file>
+        <file>images/round-1.png</file>
+        <file>images/round-3.png</file>
+        <file>images/round-2.png</file>
+        <file>images/round-4.png</file>
+    </qresource>
+</RCC>
