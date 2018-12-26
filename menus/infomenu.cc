@@ -37,7 +37,10 @@ void InfoMenu::renderContent(QPainter &p)
 // --------------------------------------------------------------------------------
 void InfoMenu::accept()
 {
-    emit activate(new FeatureMenu());
+    if (!nextMenu())
+        emit activate(new FeatureMenu());
+    else
+        emit activate(nextMenu());
 }
 
 // --------------------------------------------------------------------------------

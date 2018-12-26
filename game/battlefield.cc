@@ -103,7 +103,7 @@ void BattleField::fps()
 // --------------------------------------------------------------------------------
 void BattleField::initMenu()
 {
-    registerMenu(new InfoMenu(QImage(":images/splash.png")));
+    registerMenu(new InfoMenu(QImage(":images/splash.png"), new InfoMenu(QImage(":images/help.png"))));
 }
 
 // --------------------------------------------------------------------------------

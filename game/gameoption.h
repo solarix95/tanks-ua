@@ -13,7 +13,8 @@ public:
         OpMapSize,
         OpPlayerSelection,
         OpRounds,
-        OpFeatures
+        OpFeatures,
+        OpQuickMatch
     } ;
 
     enum Player {
@@ -32,7 +33,7 @@ public:
     };
     Q_DECLARE_FLAGS(Features, Feature)
 
-    GameOption(QString desc);
+    GameOption(QString desc, Option option = NoOption);
     GameOption(QSize mapSize, QString desc);
     GameOption(Player player, QString name);
     GameOption(int rounds, QString desc);

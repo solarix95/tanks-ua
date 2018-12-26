@@ -1,12 +1,13 @@
 #include "gameoption.h"
 
-
-GameOption::GameOption(QString desc)
+// --------------------------------------------------------------------------------
+GameOption::GameOption(QString desc, Option option)
 {
-    mOption = NoOption;
+    mOption = option;
     mDescription = desc;
 }
 
+// --------------------------------------------------------------------------------
 GameOption::GameOption(QSize mapSize, QString desc)
 {
     mOption      = OpMapSize;
@@ -14,6 +15,7 @@ GameOption::GameOption(QSize mapSize, QString desc)
     mDescription = desc;
 }
 
+// --------------------------------------------------------------------------------
 GameOption::GameOption(GameOption::Player player, QString name)
 {
     mOption      = OpPlayerSelection;
@@ -21,6 +23,7 @@ GameOption::GameOption(GameOption::Player player, QString name)
     mDescription = name;
 }
 
+// --------------------------------------------------------------------------------
 GameOption::GameOption(int rounds, QString desc)
 {
     mOption      = OpRounds;
@@ -28,10 +31,10 @@ GameOption::GameOption(int rounds, QString desc)
     mDescription = desc;
 }
 
+// --------------------------------------------------------------------------------
 GameOption::GameOption(Features features, QString desc)
 {
     mOption      = OpFeatures;
     mFeatures    = features;
     mDescription = desc;
 }
-
