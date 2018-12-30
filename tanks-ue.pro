@@ -9,8 +9,8 @@ INCLUDEPATH += . global game menus player entities
 CONFIG      += debug
 
 # DISABLE FOR NO SOUND
-# CONFIG += with_sdl
-CONFIG += with_multimedia
+CONFIG += with_sdl
+# CONFIG += with_multimedia
 
 QT += widgets gui
 
