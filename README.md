@@ -15,11 +15,19 @@ Features
 First steps
 ---------
 ```bash
-$ sudo apt install libsdl-mixer1.2-dev
-$ sudo apt install qt5-default qt5-qmake
+$ sudo apt install qt5-default qt5-qmake qtmultimedia5-dev
 $ git clone https://github.com/solarix95/tanks-ue.git
 $ cd tanks-ue
 $ qmake && make -j8
+$ ./tanks-ue
+```
+
+Use SDL as Audio-Backend (instead of QMultimedia)
+```bash
+$ sudo apt install libsdl-mixer1.2-dev
+$ cd tanks-ue
+$ <edit tanks-ue.pro: enable "CONFIG += with_sdl", disable "CONFIG += with_multimedia">
+$ qmake && make distclean && qmake && make -j8
 $ ./tanks-ue
 ```
 
