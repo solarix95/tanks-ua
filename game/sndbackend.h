@@ -3,6 +3,12 @@
 
 #include <QObject>
 
+#ifdef WITH_SDL1
+#include "sdlaudioplayer.h"
+#else
+#include "qtaudioplayer.h"
+#endif
+
 class SndBackend : public QObject
 {
     Q_OBJECT
@@ -25,13 +31,16 @@ public:
 
     virtual void play(Sound s);
     
-signals:
-    
-public slots:
 private:
     SndBackend();
     
     static SndBackend *mInstance;
+
+#ifdef WITH_SDL1
+    SdlAudioPlayer mPlayer;
+#else
+    QtAudioPlayer  mPlayer;
+#endif
 };
 
 #endif // SNDBACKEND_H

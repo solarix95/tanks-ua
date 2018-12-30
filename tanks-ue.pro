@@ -9,13 +9,21 @@ INCLUDEPATH += . global game menus player entities
 CONFIG      += debug
 
 # DISABLE FOR NO SOUND
-CONFIG += with_sdl
+# CONFIG += with_sdl
+CONFIG += with_multimedia
 
 QT += widgets gui
 
 with_sdl {
    LIBS += -lSDL_mixer -lSDL
    DEFINES += WITH_SDL1
+   SOURCES += game/sdlaudioplayer.cc
+   HEADERS += game/sdlaudioplayer.h
+}
+
+with_multimedia {
+    QT += multimedia # sudo apt install qtmultimedia5-dev
+    DEFINES += WITH_MULTIMEDIA
 }
 
 # Input
@@ -24,6 +32,7 @@ SOURCES += \
     game/battlefield.cc \
     game/landscape.cc \
     game/sndbackend.cc \
+    game/qtaudioplayer.cc \
     game/game.cc \
     game/sky.cc \
     game/wind.cc \
@@ -58,9 +67,11 @@ SOURCES += \
 
 HEADERS += \
     global/global.h \
+    global/tuemath.h \
     game/battlefield.h \
     game/landscape.h \
     game/sndbackend.h \
+    game/qtaudioplayer.h \
     game/game.h \
     game/sky.h \
     game/wind.h \
@@ -92,9 +103,7 @@ HEADERS += \
     entities/hammershoot.h \
     entities/scattershoot.h \
     entities/atomicshoot.h \
-    entities/smoke.h \
-    global/tuemath.h
-
+    entities/smoke.h
 
 RESOURCES += \
     tue.qrc
